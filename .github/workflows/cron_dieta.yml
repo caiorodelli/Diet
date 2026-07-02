@@ -2,13 +2,10 @@ name: Envio Diário da Dieta
 
 on:
   schedule:
-    # 08:00 BRT = 11:00 UTC
-    # 12:00 BRT = 15:00 UTC
-    # 14:32 BRT = 17:32 UTC
-    # 20:00 BRT = 23:00 UTC
-    - cron: '0 11,15,19,23 * * *'
-  workflow_dispatch: # Permite rodar manualmente pelo painel do GitHub para testar
-
+    # 15:05 BRT = 18:05 UTC
+    - cron: '5 18 * * *'
+  workflow_dispatch:
+  
 jobs:
   enviar_alerta:
     runs-on: ubuntu-latest

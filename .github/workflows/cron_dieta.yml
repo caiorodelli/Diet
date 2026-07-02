@@ -2,7 +2,7 @@ name: Envio Diário da Dieta
 
 on:
   schedule:
-    # 19:25 BRT = 22:25 UTC
+    # 19:40 BRT = 22:40 UTC
     - cron: '0 22 * * *'
   workflow_dispatch:
   

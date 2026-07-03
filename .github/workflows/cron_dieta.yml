@@ -2,8 +2,12 @@ name: Envio Diário da Dieta
 
 on:
   schedule:
-    # 19:57 BRT = 22:57 UTC
-    - cron: '0 22 * * *'
+    - cron: '0 11 * * *'   # 08:00 BRT
+    - cron: '0 12 * * *'   # 09:00 BRT
+    - cron: '30 14 * * *'  # 11:30 BRT
+    - cron: '0 19 * * *'   # 16:00 BRT
+    - cron: '0 23 * * *'   # 20:00 BRT
+    - cron: '1 1 * * *'    # 22:01 BRT (dia seguinte em UTC)
   workflow_dispatch:
   
 jobs:
